@@ -18,3 +18,4 @@
 %_mandir                %{_datadir}/man
 
 %ldconfpath /etc/ld.so.conf.d/opt.chizuwota.conf
+
