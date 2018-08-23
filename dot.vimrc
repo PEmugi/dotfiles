@@ -15,5 +15,8 @@ call vundle#end()
 
 syntax on
 set number
+set hidden
 filetype plugin indent on
 colorscheme molokai
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
