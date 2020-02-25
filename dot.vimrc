@@ -11,6 +11,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'cocopon/iceberg.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
@@ -18,7 +20,8 @@ syntax on
 set number
 set hidden
 filetype plugin indent on
-colorscheme solarized
+colorscheme iceberg
 set background=dark
+set guifont=Ricty\ Diminished\ Regular:h14
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
