@@ -13,6 +13,9 @@ Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'fatih/vim-go'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'kannokanno/previm'
+Plugin 'tyru/open-browser.vim'
 
 call vundle#end()
 
