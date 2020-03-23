@@ -26,5 +26,8 @@ filetype plugin indent on
 colorscheme iceberg
 set background=dark
 set guifont=Ricty\ Diminished\ Regular:h14
-
+set tabstop=4
+set shiftwidth=4
+set expandtab
+autocmd FileType python setlocal indentkeys-=<:>
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
