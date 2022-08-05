@@ -1,0 +1,45 @@
+" basic
+set hidden
+
+" tab settings
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+
+" ===================
+" plug in
+" ===================
+call plug#begin()
+
+" util
+Plug 'mattn/vim-molder'
+Plug 'ghifarit53/tokyonight-vim'
+
+" lsp
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-lsp-icons'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+
+" golang
+Plug 'mattn/vim-goimports'
+call plug#end()
+
+" color
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+  let g:tokyonight_style = 'night' " available: night, storm
+  let g:tokyonight_enable_italic = 1
+  colorscheme tokyonight
+endif
+
+" ======================
+" golang
+" ======================
+" let g:lsp_settings_filetype_go = ['gopls', 'golangci-lint-langserver']

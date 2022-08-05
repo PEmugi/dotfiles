@@ -1,11 +1,8 @@
-====================
-PEmugi's dotfiles
-====================
+# PEmugi's dotfiles
 
 vim and others
 
-Install vim-plug
-=====================
+## Install vim-plug
 
 ```shell
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
