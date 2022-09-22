@@ -27,6 +27,9 @@ Plug 'hrsh7th/vim-vsnip-integ'
 
 " golang
 Plug 'mattn/vim-goimports'
+
+" color
+Plug 'cocopon/iceberg.vim'
 call plug#end()
 
 " color
@@ -36,7 +39,7 @@ if exists('+termguicolors')
   set termguicolors
   let g:tokyonight_style = 'night' " available: night, storm
   let g:tokyonight_enable_italic = 1
-  colorscheme tokyonight
+  colorscheme iceberg
 endif
 
 " ======================
