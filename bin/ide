@@ -1,0 +1,14 @@
+#! /bin/bash
+tmux split-window -v -p 30
+tmux split-window -h -p 66
+tmux split-window -h -p 50
+
+tmux send-key -t 1 "exec $SHELL -l" Enter
+tmux send-key -t 2 "exec $SHELL -l" Enter
+tmux send-key -t 3 "exec $SHELL -l" Enter
+tmux send-key -t 1 "clear" Enter
+tmux send-key -t 2 "clear" Enter
+tmux send-key -t 3 "clear" Enter
+
+tmux select-pane -D -t 0
+clear
