@@ -6,6 +6,8 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+" number
+set number
 
 " ===================
 " plug in
@@ -48,3 +50,26 @@ endif
 " golang
 " ======================
 " let g:lsp_settings_filetype_go = ['gopls', 'golangci-lint-langserver']
+
+" ======================
+" Python
+" =====================
+" let g:lsp_settings = {
+" \	'pylsp-all': {
+" \		'workspace_config': {
+" \			'pylsp-all': {
+" \				'configurationSource': ['flake8']
+" \			}
+" \		}
+" \	}
+" \}
+
+let g:lsp_settings = {
+\   'pylsp-all': {
+\     'workspace_config': {
+\       'pylsp': {
+\         'configurationSources': ['flake8']
+\       }
+\     }
+\   },
+\}
